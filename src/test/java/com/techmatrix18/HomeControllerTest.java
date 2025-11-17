@@ -1,5 +1,6 @@
 package com.techmatrix18;
 
+import com.techmatrix18.web.HomeController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

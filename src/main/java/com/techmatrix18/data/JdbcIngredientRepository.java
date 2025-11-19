@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
+/*@Repository
 public class JdbcIngredientRepository implements IngredientRepository {
     private JdbcTemplate jdbcTemplate;
 
@@ -39,21 +39,21 @@ public class JdbcIngredientRepository implements IngredientRepository {
     }
 
     // other example
-    /*@Override
-    public Ingredient findById(String id) {
-        return jdbcTemplate.queryForObject(
-                "select id, name, type from Ingredient where id=?",
-                new RowMapper<Ingredient>() {
-                    public Ingredient mapRow(ResultSet rs, int rowNum) throws SQLException {
-                        return new Ingredient(
-                                rs.getString("id"),
-                                rs.getString("name"),
-                                Ingredient.Type.valueOf(rs.getString("type"))
-                        );
-                    }
-                }
-        );
-    }*/
+    //@Override
+    //public Ingredient findById(String id) {
+    //    return jdbcTemplate.queryForObject(
+    //            "select id, name, type from Ingredient where id=?",
+    //            new RowMapper<Ingredient>() {
+    //                public Ingredient mapRow(ResultSet rs, int rowNum) throws SQLException {
+    //                    return new Ingredient(
+    //                            rs.getString("id"),
+    //                            rs.getString("name"),
+    //                            Ingredient.Type.valueOf(rs.getString("type"))
+    //                    );
+    //                }
+    //            }
+    //    );
+    //}
 
     private Ingredient mapRowToIngredient(ResultSet row, int rowNum) throws SQLException {
         return new Ingredient(
@@ -71,5 +71,5 @@ public class JdbcIngredientRepository implements IngredientRepository {
                 ingredient.getType().toString());
         return ingredient;
     }
-}
+}*/
 

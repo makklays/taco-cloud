@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "myvars",
+      "type": "com.techmatrix18.config.MyVarsConfig",
+      "sourceType": "com.techmatrix18.config.MyVarsConfig",
+      "description": "My custom variables"
+    }
+  ],
+  "properties": [
+    {
+      "name": "myvars.mynumber",
+      "type": "java.lang.Integer",
+      "description": "This is my number variable"
+    }
+  ]
+}
+

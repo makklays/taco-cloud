@@ -17,7 +17,7 @@ import java.util.List;
  * @since 2024-06-01
  */
 @Repository
-public interface TacoRepository extends JpaRepository<Taco, Long> { // For Pagable Jpa or CrudRepository<Taco, Long>
+public interface TacoRepository extends JpaRepository<Taco, Long> { // For Pagable Jpa or PagingAndSortingRepository<Taco, Long>
     //
 
 }

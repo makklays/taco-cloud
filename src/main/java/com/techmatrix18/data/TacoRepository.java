@@ -12,13 +12,13 @@ import java.util.List;
  * TacoRepository
  *
  * @author Alexander Kuziv
+ * @since 2024-06-01
  * @company TechMatrix18
  * @version 1.0
- * @since 2024-06-01
  */
+
 @Repository
 public interface TacoRepository extends JpaRepository<Taco, Long> { // For Pagable Jpa or PagingAndSortingRepository<Taco, Long>
     //
-
 }
 

@@ -8,14 +8,33 @@ spring:
   datasource:
     generate-unique-name: false
     name: tacocloud
-#  security:
-#    oauth2:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:9000/oauth2/jwks
 #      client:
 #        registration:
 #          facebook:
 #            clientId: <facebook client id>
 #            clientSecret: <facebook client secret>
 #            scope: email, public_profile
+
+# Actuator
+management:
+  endpoints:
+    web:
+      include: '*'
+      exposure: heapdump
+  info:
+    git:
+      mode: full
+
+# for Actuator /info
+info:
+  contact:
+    email: support@tacocloud.com
+    phone: 822-625-6831
 
 server:
   port: 8081

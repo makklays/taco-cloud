@@ -76,9 +76,9 @@
 
         <!-- Spring Authorization Server -->
         <dependency>
-            <groupId>org.springframework.security.experimental</groupId>
+            <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-oauth2-authorization-server</artifactId>
-            <version>0.1.2</version>
+            <version>1.5.0</version>
         </dependency>
 
         <!-- Resource Server to protect API endpoints -->

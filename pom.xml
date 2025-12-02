@@ -158,6 +158,16 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <!-- -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <image>
+                        <name>tacocloud/${project.artifactId}:${project.version}</name>
+                    </image>
+                </configuration>
+            </plugin>
             <!-- spring boot admin (actuator) -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
